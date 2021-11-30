@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="TestCSS.css"/>
+        <fieldset>
+        
+        <body>
+            <legend><h1 class="red"> Character Generator</h1></legend>
+        <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post" enctype="multipart/form-data">
+            <div>
+                <label for="Name"> Name:</label>
+                <input type="text" name="Name" id="Name" required placeholder=" Character Name" />
+            <input type="submit" value="Go" />
+            </div>
+            
+            
+            
+           <div>
+            <input type="radio" name="Gender" value="male" id="male" />
+            <label for='male'>Male</label>
+            <input type="radio" name="Gender" value="female" id='female' />
+            <label for='female'> Female</label>
+             <input type="radio" name="Gender" value="nonbinary" required id='nonbinary'/>
+             <label for='nonbinary'>Non Binary</label>
+            </div>
+            <!-----
+            <div> 
+                <label for="Sexuality">Sexuality</label> 
+                <select name="Sexuality">
+                    <option value="Homosexual">Homosexual</option>
+                    <option value="Bisexual">Bisexual</option>
+                    <option value="OtherSexuality">Other</option>
+                </select>
+            </div> --->
+            <div>
+               <label for='color'>Skin Color</label>
+                      <input type="color" required name="Color" value="color" id="color" /> 
+            </div>
+            <div>
+                <label for='age'> Age</label>
+                <input type="range" name="Age" value="age" min="1" max="4" required id="age" />
+           </div>
+            
+
+                
+                
+                <div> Description of your character</div>
+                <div> 
+                    
+                    <textarea name="description" rows="5" cols="60" placeholder="Description of your character here"> </textarea>
+                </div>
+                <div>
+                    Picture of your character (optional) <input type="file" name="Picture" value="picture" />
+                        
+                </div>
+                    
+
+            </fieldset>
+        </form>
+        </body>
+        
+    </head>
+</html>
