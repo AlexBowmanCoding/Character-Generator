@@ -1,7 +1,16 @@
-.red{
-    color:rgb(192, 41, 41);
+.header{
+    color:firebrick;
+    
 }
 label{
     font-size: 24px;
+    margin: 10px 5px 4px auto;
+    padding: 2px;
     
+    
+}
+.background{
+    background: rgb(236, 236, 203) center/1px;
+    border: black solid 1px;
+    padding: 10px;
 }
